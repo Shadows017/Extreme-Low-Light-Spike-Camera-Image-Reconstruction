@@ -77,6 +77,27 @@
         7. 采用多线程加速
    
 ###  (iii) demo_luminance_expansion_multi_thread.py: 对路演demo用的原始图片进行光度扩充
+        1. 功能：
+        利用 Albumentations库 对 PNG 图像进行：
+        (1) 亮度缩放
+        (2) 泊松噪声添加
+
+        2. 解释器要求：
+        安装 albumentations
+
+        3. 路径要求
+        (1) 输入目录：
+            "./demo_dataset_1000x1000/gt"
+        (2) 输出目录：
+            "./luminance_expanded_demo_dataset_1000x1000/gt"
+
+        4. 文件命名格式
+        (1) 输入文件：
+            "./demo_dataset_1000x1000/gt"下："[命名，需要读取]_clip[序号1]_f[序号2].png"
+        (2) 输出文件：
+            "./luminance_expanded_"./demo_dataset_1000x1000/gt"/gt"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1]_f[序号2].png"
+
+        5. 采用多线程加速
    
 ###  (iv) demo_spike_generator_multi_thread.py: 用路演demo图片生成.dat脉冲流文件
         1. 功能
