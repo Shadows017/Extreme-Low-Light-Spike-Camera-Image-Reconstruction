@@ -5,7 +5,7 @@
 
 ---
 
-#  目录
+# 目录
 ## 一、 dataset processing prog: 数据集处理程序
 ###  (i) luminance_expansion_multi_thread.py
         1. 功能：
@@ -146,4 +146,7 @@
        (2) 需要手动改文件名："# DAT 文件路径"下的DAT_PATH
        (3) "# 参数"下的HEIGHT、WIDTH、TIMESTEPS需要与脉冲流生成参数一致
 
-### (vi) convert_img.py: 修改后的同名库文件
+###  (vi) convert_img.py: 修改后的同名库文件
+
+## 二、模型训练文件
+(待编写)
