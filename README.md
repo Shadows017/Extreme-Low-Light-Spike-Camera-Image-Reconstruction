@@ -4,13 +4,13 @@
 #  目录
 1. dataset processing prog: 数据集处理程序
 
-    (1) dataset processing prog/demo_luminance_expansion_multi_thread.py
+    (1) luminance_expansion_multi_thread.py
        
-    (2)
+    (2) spike_generator_multi_thread.py
 
-    (3)
+    (3) demo_luminance_expansion_multi_thread.py
 
-    (4)
-       
-    (5)
+    (4) demo_spike_generator_multi_thread.py
+       用路演demo图片生成.dat脉冲流文件
+    (5) spike_reader.py
        
