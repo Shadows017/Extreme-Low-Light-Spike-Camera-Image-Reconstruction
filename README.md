@@ -10,7 +10,6 @@
     (2) spike_generator_multi_thread.py
    
         用数据集图片生成.dat脉冲流文件
-   
     (3) demo_luminance_expansion_multi_thread.py
    
         对路演demo用的原始图片进行光度扩充
