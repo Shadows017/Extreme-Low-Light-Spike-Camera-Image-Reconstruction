@@ -90,12 +90,13 @@
 5. 文件命名格式
 
 (1) 输入文件：
+        
         "./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
         "./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
 
 (2) 输出文件：
 
-   "./luminance_expanded_spike_x4k/train/input"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3].dat"
+        "./luminance_expanded_spike_x4k/train/input"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3].dat"
         "./luminance_expanded_spike_x4k/test/input"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3].dat"
    
 7. 注意：
@@ -106,9 +107,9 @@
 
 中的
 
-        img_to_spike()函数
+        img_to_spike()
 
-做了修改，以适配多线程加速。
+做了修改，以适配多线程。
 
 (目录例：
         
