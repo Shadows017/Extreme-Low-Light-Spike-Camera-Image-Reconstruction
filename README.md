@@ -53,7 +53,7 @@
 
 2. 解释器要求：
 
-(1) 安装北大官方的Spike库
+（1）安装北大官方的Spike库
 
 安装过程（在anaconda环境命令行中依次运行）：
        
@@ -63,38 +63,38 @@
 
 （安装后实际调用的时候，程序报错区可能还会显示“无法解析导入Spike”，无视掉，正常跑就行）
 
-(2) pyhton版本为3.10.x
+（2）pyhton版本为3.10.x
 
-(3) 安装numpy v1.26.x
+（3）安装numpy v1.26.x
 
 3. 时间结构：
 
-(1) 全0空白timestep
+（1）全0空白timestep
 
-(2) 一组5张图，每张图生成8个timestep
+（2）一组5张图，每张图生成8个timestep
 
-(3) 一个.dat文件共含41timestep
+（3）一个.dat文件共含41timestep
 
 4. 路径要求
 
-(1) 输入目录：
+（1）输入目录：
 
         "./luminance_expanded_spike_x4k/train/gt",
         "./luminance_expanded_spike_x4k/test/gt"
 
-(2) 输出目录：
+（2）输出目录：
 
         "./luminance_expanded_spike_x4k/train/input"
         "./luminance_expanded_spike_x4k/test/input"
   
 5. 文件命名格式
 
-(1) 输入文件：
+（1）输入文件：
         
         "./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
         "./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
 
-(2) 输出文件：
+（2）输出文件：
 
         "./luminance_expanded_spike_x4k/train/input"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3].dat"
         "./luminance_expanded_spike_x4k/test/input"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3].dat"
@@ -122,27 +122,39 @@
 7. 采用多线程加速
    
 ###  (iii) demo_luminance_expansion_multi_thread.py: 对路演demo用的原始图片进行光度扩充
-        1. 功能：
-        利用 Albumentations库 对 PNG 图像进行：
-        (1) 亮度缩放
-        (2) 泊松噪声添加
+1. 功能：
 
-        2. 解释器要求：
-        安装 albumentations
+利用 Albumentations库 对 PNG 图像进行：
 
-        3. 路径要求
-        (1) 输入目录：
-            "./demo_dataset_1000x1000/gt"
-        (2) 输出目录：
-            "./luminance_expanded_demo_dataset_1000x1000/gt"
+（1）亮度缩放
 
-        4. 文件命名格式
-        (1) 输入文件：
-            "./demo_dataset_1000x1000/gt"下："[命名，需要读取]_clip[序号1]_f[序号2].png"
-        (2) 输出文件：
-            "./luminance_expanded_"./demo_dataset_1000x1000/gt"/gt"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1]_f[序号2].png"
+（2）泊松噪声添加
 
-        5. 采用多线程加速
+2. 解释器要求：
+
+安装 albumentations
+
+3. 路径要求
+
+（1）输入目录：
+
+        "./demo_dataset_1000x1000/gt"
+
+（2）输出目录：
+
+        "./luminance_expanded_demo_dataset_1000x1000/gt"
+
+4. 文件命名格式
+
+（1）输入文件：
+
+        "./demo_dataset_1000x1000/gt"下："[命名，需要读取]_clip[序号1]_f[序号2].png"
+
+（2）输出文件：
+
+        "./luminance_expanded_"./demo_dataset_1000x1000/gt"/gt"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1]_f[序号2].png"
+
+5. 采用多线程加速
    
 ###  (iv) demo_spike_generator_multi_thread.py: 用路演demo图片生成.dat脉冲流文件
         1. 功能
