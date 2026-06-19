@@ -227,7 +227,7 @@
 
 （2）需要手动改文件名："# DAT 文件路径"下的DAT_PATH
 
-（3）"# 参数"下的HEIGHT、WIDTH、TIMESTEPS需要与脉冲流生成参数一致
+（3）"# 参数"下的HEIGHT、WIDTH、TIMESTEPS需要与脉冲流生成时的同名参数一致
 
 ###  (vi) convert_img.py: 修改后的同名库文件
 
