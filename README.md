@@ -10,7 +10,7 @@
 ###  (i) luminance_expansion_multi_thread.py
 1. 功能：
 
-\t利用 Albumentations库 对 PNG 图像进行：
+利用 Albumentations库 对 PNG 图像进行：
 
 （1）亮度缩放
 
