@@ -63,9 +63,9 @@
 
 （安装后实际调用的时候，程序报错区可能还会显示“无法解析导入Spike”，无视掉，正常跑就行）
 
-（2）pyhton版本为3.10.x
+（2）pyhton版本为 3.10.x
 
-（3）安装numpy v1.26.x
+（3）numpy版本为 1.26.x
 
 3. 时间结构：
 
@@ -171,9 +171,9 @@
 
 （安装后实际调用的时候，程序报错区可能还会显示“无法解析导入Spike”，无视掉，正常跑就行）
 
-（2）pyhton版本为3.10.x
+（2）pyhton版本为 3.10.x
 
-（3）安装numpy v1.26.x
+（3）numpy版本为 1.26.x
 
 3. 时间结构：
 
@@ -205,7 +205,15 @@
 
 6. 注意：
 
-本程序按需求对SpikeCV\SpikeCV\spkData\convert_img.py中的img_to_spike函数做了修改，以适配多线程加速。
+本程序按需求对
+
+        SpikeCV\SpikeCV\spkData\convert_img.py
+
+中的
+
+        img_to_spike()
+
+做了修改，以适配多线程。
 
 (目录例：本机地址)
 
